@@ -1,0 +1,23 @@
+{
+  "name": "Covid19Mumbai",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "deploy": "gh-pages -d dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/manish0pal/covid19inMumbai.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/manish0pal/covid19inMumbai/issues"
+  },
+  "homepage": "https://github.com/manish0pal/covid19inMumbai",
+  "dependencies": {
+    "gh-pages": "^2.2.0"
+  }
+}
