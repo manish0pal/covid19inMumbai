@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Covid-19 Infected Area in Mumbai</title>
+  <meta charset="utf-8">
+  <link  rel="icon" type="image/ico" href="img/corona.png" />
+  <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v1.9.1/mapbox-gl.js'></script>
+  <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v1.9.1/mapbox-gl.css' rel='stylesheet' />
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body onload="alrtfisrtime()">
+<div class="container">
+  <div id="map" ></div>
+</div>
+<!-- Go to www.addthis.com/dashboard to customize your tools -->
+
+</body>
+
+ <script src="https://unpkg.com/@mapbox/mapbox-sdk/umd/mapbox-sdk.min.js"></script>
+<script src="https://api.mapbox.com/mapbox-gl-js/v1.9.1/mapbox-gl.js"></script>
+<script src="index.js"></script>
+<script>
+    mapboxgl.accessToken = 'pk.eyJ1IjoibWFuaXNocGFsIiwiYSI6ImNrOG45MDVkcTA2cmczZmx2b3NuanE5a3AifQ.0UMfWYIJU1dIToDsbVWYgw';
+
+var map = new mapboxgl.Map({
+  container: 'map',
+  style: 'mapbox://styles/mapbox/streets-v11',
+      zoom:'10',
+      center: [72.89,19.09]
+});
+updateMap()
+
+    </script>
+</html>
