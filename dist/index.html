@@ -6,7 +6,7 @@
   <link  rel="icon" type="image/ico" href="img/corona.png" />
 <!-- SEO  start-->
    <meta name="title" content="Covid 19 in Mumbai">
-<meta name="description" content="Corona hotspot in Mumbai">
+<meta name="description" content="Corona (infected area) hotspot in Mumbai">
 <meta name="keywords" content="corona,covid19,mumbai,">
 <meta name="robots" content="index, follow">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
@@ -16,6 +16,9 @@
 <meta name="google-site-verification" content="4K8JM-ct-IOse4J5pHFUEn5lsdvkGHikNGMUr18xA1k" />
 <script data-ad-client="ca-pub-6531828725959391" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <!-- SEO end -->
+<!-- Bootstrap -->
+
+<!-- Bootstrap -->
   <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
   <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
   <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v1.9.1/mapbox-gl.js'></script>
@@ -25,15 +28,27 @@
 <body onload="alrtfisrtime()">
 <div class="container">
   <div id="map" ></div>
+  <center>
+  <p class="float">
+    The map is updated at 18-April-2020 
+Total hotspot in mumbai :- <strong id=hotspotnumber></strong> 
+  </p></center>
+  <div id="snackbar">Loding....</div>
 </div>
-<!-- Go to www.addthis.com/dashboard to customize your tools -->
-
+<!-- Message -->
+<script>
+  // Add the "show" class to DIV
+  var x = document.getElementById("snackbar");
+x.className = "show";
+console.log("loading start");
+</script>
 </body>
 
  <script src="https://unpkg.com/@mapbox/mapbox-sdk/umd/mapbox-sdk.min.js"></script>
 <script src="https://api.mapbox.com/mapbox-gl-js/v1.9.1/mapbox-gl.js"></script>
 <script src="index.js"></script>
 <script>
+  
     mapboxgl.accessToken = 'pk.eyJ1IjoibWFuaXNocGFsIiwiYSI6ImNrOG45MDVkcTA2cmczZmx2b3NuanE5a3AifQ.0UMfWYIJU1dIToDsbVWYgw';
 
 var map = new mapboxgl.Map({

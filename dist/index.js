@@ -1,3 +1,4 @@
+var x = document.getElementById("snackbar")
 function updateMap() {
   //trac user loc
   const geoLocate = new mapboxgl.GeolocateControl({
@@ -12,12 +13,12 @@ function updateMap() {
   geoLocate.on('geolocate', function (e) {
     map.flyTo({
       center: [e.coords.longitude, e.coords.latitude],
-      zoom: 14 //set zoom 
+      zoom: 13.5 //set zoom 
     });
   });
 
   //Read Json file
-  carea = [
+  carea =[
     {
         "location": [18.963825,72.831354],
         "address": "Doodhwala Chawl Doodhwala Chawl P B Marg Grant road Grant road 400008"
@@ -280,11 +281,11 @@ function updateMap() {
     },
     {
         "location": [19.15129,72.93316899999999],
-        "address": "Sitaram Jadhav Chawl Behind Mangat Petrol Pump Kaju Hill, Ganesh Nager, Bhandup[W] 400078"
+        "address": "Sitaram Jadhav Chawl Behind Mangat Petrol Pump Kaju Hill, Ganesh Nager, Bhandup(W) 400078"
     },
     {
         "location": [19.166909,72.930237],
-        "address": "Nirmala Kumar Chawl Khindipada Darga Road, Nirmala Kumar Chawl Mulund [W] 400078"
+        "address": "Nirmala Kumar Chawl Khindipada Darga Road, Nirmala Kumar Chawl Mulund (W) 400078"
     },
     {
         "location": [19.164585,72.950484],
@@ -292,7 +293,7 @@ function updateMap() {
     },
     {
         "location": [19.149563,72.935244],
-        "address": "Chawl no.1 Narayan CHS Sai Hill Bhandup [W] 400078"
+        "address": "Chawl no.1 Narayan CHS Sai Hill Bhandup (W) 400078"
     },
     {
         "location": [18.936123000000002,72.834404],
@@ -520,7 +521,7 @@ function updateMap() {
     },
     {
         "location": [19.011718,72.856516],
-        "address": "MBPT New Colony Wadala [E] 400037"
+        "address": "MBPT New Colony Wadala (E) 400037"
     },
     {
         "location": [19.021384,72.848341],
@@ -600,7 +601,7 @@ function updateMap() {
     },
     {
         "location": [19.15105310000007,72.93590310000008],
-        "address": " Gaon Devi mandir, Milind Nagar, S Ward, Zone 6, Mumbai, Mumbai Suburban, Maharashtra, 400078, India"
+        "address": "Not Mentioned Gaon Devi mandir, Milind Nagar, S Ward, Zone 6, Mumbai, Mumbai Suburban, Maharashtra, 400078, India"
     },
     {
         "location": [19.072023,72.836575],
@@ -976,7 +977,7 @@ function updateMap() {
     },
     {
         "location": [19.122668,72.941315],
-        "address": "MHADA Building Chawl, Kannamwar Nagar Vikhroli [E] 400083"
+        "address": "MHADA Building Chawl, Kannamwar Nagar Vikhroli (E) 400083"
     },
     {
         "location": [19.145944,72.93293299999999],
@@ -1384,11 +1385,11 @@ function updateMap() {
     },
     {
         "location": [19.14012549246693,72.93015575547555],
-        "address": "Ganesh Nager, Sitaram Jadhav Chawl, Behind Mangat Petrol Pump, Bhandup[W]- 400078"
+        "address": "Ganesh Nager, Sitaram Jadhav Chawl, Behind Mangat Petrol Pump, Bhandup(W)- 400078"
     },
     {
         "location": [19.17134177376156,72.95345676475453],
-        "address": "Narayan CHS, Sai Hill, Bhandup [W]- 400078"
+        "address": "Narayan CHS, Sai Hill, Bhandup (W)- 400078"
     },
     {
         "location": [19.12486163375296,72.91693322250231],
@@ -1404,11 +1405,11 @@ function updateMap() {
     },
     {
         "location": [19.1610323,72.9357215],
-        "address": "Rajiv Gandhi nagar Chawl, Dargah Road, Bhandup [W]- 400078"
+        "address": "Rajiv Gandhi nagar Chawl, Dargah Road, Bhandup (W)- 400078"
     },
     {
         "location": [19.13997855093426,72.93009298018791],
-        "address": "Ganesh Nager, Sitaram Jadhav Chawl, Behind Mangat Petrol Pump, Bhandup[W]- 400078"
+        "address": "Ganesh Nager, Sitaram Jadhav Chawl, Behind Mangat Petrol Pump, Bhandup(W)- 400078"
     },
     {
         "location": [19.12460920651214,72.84538538348113],
@@ -1632,7 +1633,7 @@ function updateMap() {
     },
     {
         "location": [19.011613177000072,72.85651402600007],
-        "address": "MBPT New Colony, Wadala [E], Mumbai- 400037"
+        "address": "MBPT New Colony, Wadala (E), Mumbai- 400037"
     },
     {
         "location": [18.957489080000073,72.81542730600006],
@@ -1676,7 +1677,7 @@ function updateMap() {
     },
     {
         "location": [19.017060779000076,72.85842755300007],
-        "address": "Vaibhav Building, Near Wadala Bridge, Wadala [E], Mumbai-400037"
+        "address": "Vaibhav Building, Near Wadala Bridge, Wadala (E), Mumbai-400037"
     },
     {
         "location": [18.973581073000048,72.82819127800008],
@@ -1700,7 +1701,7 @@ function updateMap() {
     },
     {
         "location": [19.01307254200003,72.86144910600007],
-        "address": "Sushruta Building, MBPT Hospital, Wadala [E], Mumbai- 400037"
+        "address": "Sushruta Building, MBPT Hospital, Wadala (E), Mumbai- 400037"
     },
     {
         "location": [18.960869165000076,72.80976910600003],
@@ -1756,7 +1757,7 @@ function updateMap() {
     },
     {
         "location": [19.017571434000047,72.85470573300006],
-        "address": "Sainath Hotel, Near fish market, Wadala [W], Mumbai- 400031"
+        "address": "Sainath Hotel, Near fish market, Wadala (W), Mumbai- 400031"
     },
     {
         "location": [18.96162694700007,72.80980515100003],
@@ -2224,7 +2225,7 @@ function updateMap() {
     },
     {
         "location": [19.0276777,72.87024559999999],
-        "address": "SAI BABA MANDIR, VIJAY NAGAR , ANTOP HILL, WADALA c/o pandit[rented house] Wadala east 400037"
+        "address": "SAI BABA MANDIR, VIJAY NAGAR , ANTOP HILL, WADALA c/o pandit(rented house) Wadala east 400037"
     },
     {
         "location": [19.01594201636252,72.86459743933852],
@@ -2244,7 +2245,7 @@ function updateMap() {
     },
     {
         "location": [19.051802500000065,72.88662380000005],
-        "address": " Chembur Colony, M/W Ward, Zone 5, Mumbai, Mumbai Suburban, Maharashtra, 400071, India"
+        "address": "Not Mentioned Chembur Colony, M/W Ward, Zone 5, Mumbai, Mumbai Suburban, Maharashtra, 400071, India"
     },
     {
         "location": [19.0097346,72.8255543],
@@ -2308,7 +2309,7 @@ function updateMap() {
     },
     {
         "location": [19.0650798,72.8565769],
-        "address": "SRA Patthar Nagar 3 C/103 Bharat Nagr BKC Bandra [E] 400055"
+        "address": "SRA Patthar Nagar 3 C/103 Bharat Nagr BKC Bandra (E) 400055"
     },
     {
         "location": [19.08154070356635,72.85412494816593],
@@ -2384,71 +2385,71 @@ function updateMap() {
     },
     {
         "location": [19.095919700000024,72.90551690000007],
-        "address": "Varsha Nagar, N Ward, Zone 6, Mumbai, Mumbai Suburban, Maharashtra, 400086, India"
+        "address": "Not Mentioned Varsha Nagar, N Ward, Zone 6, Mumbai, Mumbai Suburban, Maharashtra, 400086, India"
     },
     {
         "location": [19.093636238000045,72.90381498400006],
-        "address": "jalaram mandir, R B Kadam Road, Azad Nagar, N Ward, Zone 6, Mumbai, Mumbai Suburban, Maharashtra, 400086, India"
+        "address": "Not Mentioned jalaram mandir, R B Kadam Road, Azad Nagar, N Ward, Zone 6, Mumbai, Mumbai Suburban, Maharashtra, 400086, India"
     },
     {
         "location": [19.102050000000077,72.90877440000008],
-        "address": "Varsha Nagar, N Ward, Zone 6, Mumbai, Mumbai Suburban, Maharashtra, 400079, India"
+        "address": "Not Mentioned Varsha Nagar, N Ward, Zone 6, Mumbai, Mumbai Suburban, Maharashtra, 400079, India"
     },
     {
         "location": [19.074525528000038,72.91376147700004],
-        "address": "Kamaraj Nagar, N Ward, Zone 6, Mumbai, Mumbai Suburban, Maharashtra, 400077, India"
+        "address": "Not Mentioned Kamaraj Nagar, N Ward, Zone 6, Mumbai, Mumbai Suburban, Maharashtra, 400077, India"
     },
     {
         "location": [19.072405400000036,72.91409200000004],
-        "address": "Kamaraj Nagar Road, Kamaraj Nagar, N Ward, Zone 6, Mumbai, Mumbai Suburban, Maharashtra, 400044, India"
+        "address": "Not Mentioned Kamaraj Nagar Road, Kamaraj Nagar, N Ward, Zone 6, Mumbai, Mumbai Suburban, Maharashtra, 400044, India"
     },
     {
         "location": [19.09033370900005,72.89895949700008],
-        "address": "Azad Nagar, N Ward, Zone 6, Mumbai, Mumbai Suburban, Maharashtra, 400086, India"
+        "address": "Not Mentioned Azad Nagar, N Ward, Zone 6, Mumbai, Mumbai Suburban, Maharashtra, 400086, India"
     },
     {
         "location": [19.18779420000004,72.82361530000003],
-        "address": "Janakalyan Nagar, P/N Ward, Zone 4, Mumbai, Mumbai Suburban, Maharashtra, 400095, India"
+        "address": "Not Mentioned Janakalyan Nagar, P/N Ward, Zone 4, Mumbai, Mumbai Suburban, Maharashtra, 400095, India"
     },
     {
         "location": [19.188176183000053,72.85088855200007],
-        "address": "Rai Pada, P/N Ward, Zone 4, Mumbai, Mumbai Suburban, Maharashtra, 400097, India"
+        "address": "Not Mentioned Rai Pada, P/N Ward, Zone 4, Mumbai, Mumbai Suburban, Maharashtra, 400097, India"
     },
     {
         "location": [19.188322500000027,72.82310850000005],
-        "address": "Janakalyan Nagar, P/N Ward, Zone 4, Mumbai, Mumbai Suburban, Maharashtra, 400095, India"
+        "address": "Not Mentioned Janakalyan Nagar, P/N Ward, Zone 4, Mumbai, Mumbai Suburban, Maharashtra, 400095, India"
     },
     {
         "location": [19.189758934000054,72.85685693800008],
-        "address": "Rai Pada, P/N Ward, Zone 4, Mumbai, Mumbai Suburban, Maharashtra, 400097, India"
+        "address": "Not Mentioned Rai Pada, P/N Ward, Zone 4, Mumbai, Mumbai Suburban, Maharashtra, 400097, India"
     },
     {
         "location": [19.18579610000006,72.81704633100003],
-        "address": "Janakalyan Nagar, P/N Ward, Zone 4, Mumbai, Mumbai Suburban, Maharashtra, 400095, India"
+        "address": "Not Mentioned Janakalyan Nagar, P/N Ward, Zone 4, Mumbai, Mumbai Suburban, Maharashtra, 400095, India"
     },
     {
         "location": [19.18437903100005,72.82304687300007],
-        "address": "Janakalyan Nagar, P/N Ward, Zone 4, Mumbai, Mumbai Suburban, Maharashtra, 400095, India"
+        "address": "Not Mentioned Janakalyan Nagar, P/N Ward, Zone 4, Mumbai, Mumbai Suburban, Maharashtra, 400095, India"
     },
     {
         "location": [19.171587000000045,72.87878300000006],
-        "address": "Nagari Niwara Colony, P/N Ward, Zone 4, Mumbai, Kulāba, Mumbai Suburban, Maharashtra, 400063, India"
+        "address": "Not Mentioned Nagari Niwara Colony, P/N Ward, Zone 4, Mumbai, Kulāba, Mumbai Suburban, Maharashtra, 400063, India"
     },
     {
         "location": [19.17184910000003,72.83825470000005],
-        "address": "Motilal Nagar II, P/S Ward, Zone 4, Mumbai, Mumbai Suburban, Maharashtra, 400062, India"
+        "address": "Not Mentioned Motilal Nagar II, P/S Ward, Zone 4, Mumbai, Mumbai Suburban, Maharashtra, 400062, India"
     },
     {
         "location": [19.239500216000067,72.86063629500006],
-        "address": "D N Dube Road, Shivaji Nagar, R/N Ward, Zone 4, Mumbai, Mumbai Suburban, Maharashtra, 400068, India"
+        "address": "Not Mentioned D N Dube Road, Shivaji Nagar, R/N Ward, Zone 4, Mumbai, Mumbai Suburban, Maharashtra, 400068, India"
     },
     {
         "location": [19.256246300000043,72.86491405000004],
-        "address": "Vaishali Nagar, R/N Ward, Zone 4, Mumbai, Mumbai Suburban, Maharashtra, 400068, India"
+        "address": "Not Mentioned Vaishali Nagar, R/N Ward, Zone 4, Mumbai, Mumbai Suburban, Maharashtra, 400068, India"
     },
     {
         "location": [19.196305040000027,72.86486190000005],
-        "address": "R/S Ward, Zone 4, Mumbai, Mumbai Suburban, Maharashtra, 400101, India"
+        "address": "Not Mentioned R/S Ward, Zone 4, Mumbai, Mumbai Suburban, Maharashtra, 400101, India"
     },
     {
         "location": [19.08792222200003,72.89837777800005],
@@ -2484,27 +2485,27 @@ function updateMap() {
     },
     {
         "location": [19.158754357000078,72.92865383400004],
-        "address": "Duck Line Road, T Ward, Zone 6, Mumbai, Mumbai Suburban, Maharashtra, 400 078, India"
+        "address": "Not Mentioned Duck Line Road, T Ward, Zone 6, Mumbai, Mumbai Suburban, Maharashtra, 400 078, India"
     },
     {
         "location": [19.13117905000007,72.93502045000008],
-        "address": "Aniket Nursing Home, Veer Savarkar Road, Chhatrapati Nagar, S Ward, Zone 6, Mumbai, Mumbai Suburban, Maharashtra, 400042, India"
+        "address": "Not Mentioned Aniket Nursing Home, Veer Savarkar Road, Chhatrapati Nagar, S Ward, Zone 6, Mumbai, Mumbai Suburban, Maharashtra, 400042, India"
     },
     {
         "location": [19.11762580000004,72.93276860000003],
-        "address": "S Ward, Zone 6, Mumbai, Mumbai Suburban, Maharashtra, 400083, India"
+        "address": "Not Mentioned S Ward, Zone 6, Mumbai, Mumbai Suburban, Maharashtra, 400083, India"
     },
     {
         "location": [19.166010079000046,72.93510986200005],
-        "address": "Phase-II, Goregaon Mulund Link Road, T Ward, Zone 6, Mumbai, Mumbai Suburban, Maharashtra, 400082, India"
+        "address": "Not Mentioned Phase-II, Goregaon Mulund Link Road, T Ward, Zone 6, Mumbai, Mumbai Suburban, Maharashtra, 400082, India"
     },
     {
         "location": [19.12014080000006,72.92926630000005],
-        "address": "S Ward, Zone 6, Mumbai, Mumbai Suburban, Maharashtra, 400083, India"
+        "address": "Not Mentioned S Ward, Zone 6, Mumbai, Mumbai Suburban, Maharashtra, 400083, India"
     },
     {
         "location": [18.97253055555555,72.82932222222222],
-        "address": " Merchant Building Sheik Hafizuddin Marg [Sankli Street], E Ward, Zone 1, Mumbai, Mumbai City, Maharashtra, 400008, India"
+        "address": "Add- Merchant Building Sheik Hafizuddin Marg (Sankli Street), E Ward, Zone 1, Mumbai, Mumbai City, Maharashtra, 400008, India"
     },
     {
         "location": [19.118538889000035,72.83677777800006],
@@ -2648,7 +2649,7 @@ function updateMap() {
     },
     {
         "location": [18.98563049970605,72.83137699977947],
-        "address": "ani Building [Anand Estate] N. M. Joshi Marg Chinchpokli, Mumbai 400011"
+        "address": "ani Building (Anand Estate) N. M. Joshi Marg Chinchpokli, Mumbai 400011"
     },
     {
         "location": [18.99430915006503,72.8447583497175],
@@ -2660,7 +2661,7 @@ function updateMap() {
     },
     {
         "location": [19.14829666207511,72.94465870066692],
-        "address": "Yashodhara CHS Udayshree RoadBhandup [E] Mumbai- 400042"
+        "address": "Yashodhara CHS Udayshree RoadBhandup (E) Mumbai- 400042"
     },
     {
         "location": [18.9382082985796,72.8372232833373],
@@ -2916,15 +2917,15 @@ function updateMap() {
     },
     {
         "location": [19.14137500000004,72.92383055600004],
-        "address": "Jitu Rai Yadav Chawl, Pratapnagar Road , Munshi Mahal, Bhandup [W], Mumbai-400078"
+        "address": "Jitu Rai Yadav Chawl, Pratapnagar Road , Munshi Mahal, Bhandup (W), Mumbai-400078"
     },
     {
         "location": [19.15640833300006,72.92680000000007],
-        "address": "Priti Niwas Chawl, Maroda hill, Tembhipada, Bhandup [W], Mumbai-400078"
+        "address": "Priti Niwas Chawl, Maroda hill, Tembhipada, Bhandup (W), Mumbai-400078"
     },
     {
         "location": [19.092902778000052,72.88258333300007],
-        "address": "HARI MASJID, ANDHERI ROAD, JUNA KABRASTHAN ANDHERI [E], Mumbai-400072"
+        "address": "HARI MASJID, ANDHERI ROAD, JUNA KABRASTHAN ANDHERI (E), Mumbai-400072"
     },
     {
         "location": [19.068316667000033,72.84491111100004],
@@ -2992,7 +2993,7 @@ function updateMap() {
     },
     {
         "location": [19.05515555555556,72.84276388888888],
-        "address": "Floor No 214 , Behram Nagar, Bandra East, 400055 ,A K Marg [Station Road], Garib Nagar, H/W Ward, Zone 3, Mumbai, Mumbai Suburban, Maharashtra, 40051, India"
+        "address": "Floor No 214 , Behram Nagar, Bandra East, 400055 A K Marg (Station Road), Garib Nagar, H/W Ward, Zone 3, Mumbai, Mumbai Suburban, Maharashtra, 40051, India"
     },
     {
         "location": [19.05641111111111,72.84412499999999],
@@ -3116,7 +3117,7 @@ function updateMap() {
     },
     {
         "location": [19.147461,72.946177],
-        "address": "Arogyasadan Society Juvekar Road Bhandup [E] Bhandup Village East, S Ward, Zone 6, Mumbai, Mumbai Suburban, Maharashtra, 400078, India"
+        "address": "Arogyasadan Society Juvekar Road Bhandup (E) Bhandup Village East, S Ward, Zone 6, Mumbai, Mumbai Suburban, Maharashtra, 400078, India"
     },
     {
         "location": [19.041691972000024,72.85052482000003],
@@ -3144,7 +3145,7 @@ function updateMap() {
     },
     {
         "location": [19.055734882000024,72.84233838600005],
-        "address": "hinga galli, behram nagar,bandra east A K Marg [Station Road], Garib Nagar, H/W Ward, Zone 3, Mumbai, Mumbai Suburban, Maharashtra, 40051, India"
+        "address": "hinga galli, behram nagar,bandra east A K Marg (Station Road), Garib Nagar, H/W Ward, Zone 3, Mumbai, Mumbai Suburban, Maharashtra, 40051, India"
     },
     {
         "location": [19.02245524219123,72.87035876203905],
@@ -3152,7 +3153,7 @@ function updateMap() {
     },
     {
         "location": [19.08880801981999,72.89366247293003],
-        "address": "yan Nagar,Gaibanshah Dargah, Ghatkopar [w] Narayan Nagar, L Ward, Zone 5, Mumbai, Mumbai Suburban, Maharashtra, 400 072, India"
+        "address": "yan Nagar,Gaibanshah Dargah, Ghatkopar (w) Narayan Nagar, L Ward, Zone 5, Mumbai, Mumbai Suburban, Maharashtra, 400 072, India"
     },
     {
         "location": [19.0647,72.85949722222222],
@@ -3164,7 +3165,7 @@ function updateMap() {
     },
     {
         "location": [19.05515555555556,72.84276388888888],
-        "address": "Room No. 344 A K Marg [Station Road], Garib Nagar, H/W Ward, Zone 3, Mumbai, Mumbai Suburban, Maharashtra, 40051, India"
+        "address": "Room No. 344 A K Marg (Station Road), Garib Nagar, H/W Ward, Zone 3, Mumbai, Mumbai Suburban, Maharashtra, 40051, India"
     },
     {
         "location": [19.10656388888889,72.86858888888888],
@@ -3376,195 +3377,195 @@ function updateMap() {
     },
     {
         "location": [18.97201944444444,72.81515277777777],
-        "address": " Room No- 26, 3rd Floor Ratan Tata Marg, Cowasji Jehangir Colony, D Ward, Zone 1, Mumbai, Mumbai City, Maharashtra, 400034, India"
+        "address": "Add- Room No- 26, 3rd Floor Ratan Tata Marg, Cowasji Jehangir Colony, D Ward, Zone 1, Mumbai, Mumbai City, Maharashtra, 400034, India"
     },
     {
         "location": [18.96103055555556,72.82606388888888],
-        "address": " Room no 47, 3rd floor Trimbak Parshuram Street, C Ward, Zone 1, Mumbai, Mumbai City, Maharashtra, 400004, India"
+        "address": "Add- Room no 47, 3rd floor Trimbak Parshuram Street, C Ward, Zone 1, Mumbai, Mumbai City, Maharashtra, 400004, India"
     },
     {
         "location": [18.96598611111111,72.81353888888889],
-        "address": " R.N. 86, 8th floor Chikalwadi, D Ward, Zone 1, Mumbai, Mumbai City, Maharashtra, 400026, India"
+        "address": "Add- R.N. 86, 8th floor Chikalwadi, D Ward, Zone 1, Mumbai, Mumbai City, Maharashtra, 400026, India"
     },
     {
         "location": [18.96927777777778,72.82545555555555],
-        "address": " Room no2,1st floor E Ward, Zone 1, Mumbai, Mumbai City, Maharashtra, 400004, India"
+        "address": "Add- Room no2,1st floor E Ward, Zone 1, Mumbai, Mumbai City, Maharashtra, 400004, India"
     },
     {
         "location": [18.97293611111111,72.80722777777777],
-        "address": " Room No-8 Shyam Nivas, Haji Ali, D Ward, Zone 1, Mumbai, Mumbai City, Maharashtra, 400026, India"
+        "address": "Add- Room No-8 Shyam Nivas, Haji Ali, D Ward, Zone 1, Mumbai, Mumbai City, Maharashtra, 400026, India"
     },
     {
         "location": [18.97369587861006,72.81482896396415],
-        "address": " Room No-61 Anudhiti Care, Pandit Madan Mohan Malviya Marg, Cowasji Jehangir Colony, D Ward, Zone 1, Mumbai, Mumbai City, Maharashtra, 400034, India"
+        "address": "Add- Room No-61 Anudhiti Care, Pandit Madan Mohan Malviya Marg, Cowasji Jehangir Colony, D Ward, Zone 1, Mumbai, Mumbai City, Maharashtra, 400034, India"
     },
     {
         "location": [18.97191388888889,72.8321111111111],
-        "address": " 4th floor room no. 12 byculla Khatau Makanji Spinning and Weaving Mills, Haines Road, E Ward, Zone 1, Mumbai, Mumbai City, Maharashtra, 400008, India"
+        "address": "Add- 4th floor room no. 12 byculla Khatau Makanji Spinning and Weaving Mills, Haines Road, E Ward, Zone 1, Mumbai, Mumbai City, Maharashtra, 400008, India"
     },
     {
         "location": [19.06097900000003,72.92562700000008],
-        "address": " Sanjay Nagar I, M/E Ward, Zone 5, Mumbai, Mumbai Suburban, Maharashtra, 400043, India"
+        "address": "Not Mentioned Sanjay Nagar I, M/E Ward, Zone 5, Mumbai, Mumbai Suburban, Maharashtra, 400043, India"
     },
     {
         "location": [19.140058533000058,72.92969351400006],
-        "address": " Jamil Nagar, S Ward, Zone 6, Mumbai, Mumbai Suburban, Maharashtra, 400042, India"
+        "address": "Not Mentioned Jamil Nagar, S Ward, Zone 6, Mumbai, Mumbai Suburban, Maharashtra, 400042, India"
     },
     {
         "location": [19.15823098000004,72.93480833000007],
-        "address": " Sonapur, S Ward, Zone 6, Mumbai, Mumbai Suburban, Maharashtra, 400 078, India"
+        "address": "Not Mentioned Sonapur, S Ward, Zone 6, Mumbai, Mumbai Suburban, Maharashtra, 400 078, India"
     },
     {
         "location": [19.163992113000063,72.93615200100004],
-        "address": " T Ward, Zone 6, Mumbai, Mumbai Suburban, Maharashtra, 400082, India"
+        "address": "Not Mentioned T Ward, Zone 6, Mumbai, Mumbai Suburban, Maharashtra, 400082, India"
     },
     {
         "location": [19.06380500000006,72.92309720000003],
-        "address": " Road Number 5, Milan Colony, M/E Ward, Zone 5, Mumbai, Mumbai Suburban, Maharashtra, 400043, India"
+        "address": "Not Mentioned Road Number 5, Milan Colony, M/E Ward, Zone 5, Mumbai, Mumbai Suburban, Maharashtra, 400043, India"
     },
     {
         "location": [19.06461470000005,72.92438060000006],
-        "address": " Plot no.19, M/E Ward, Zone 5, Mumbai, Mumbai Suburban, Maharashtra, 400043, India"
+        "address": "Not Mentioned Plot no.19, M/E Ward, Zone 5, Mumbai, Mumbai Suburban, Maharashtra, 400043, India"
     },
     {
         "location": [19.056939889000034,72.91423245000004],
-        "address": " Deonar Road, Tata Nagar, M/E Ward, Zone 5, Mumbai, Mumbai Suburban, Maharashtra, 400044, India"
+        "address": "Not Mentioned Deonar Road, Tata Nagar, M/E Ward, Zone 5, Mumbai, Mumbai Suburban, Maharashtra, 400044, India"
     },
     {
         "location": [19.061277731000075,72.90787836400006],
-        "address": " janta raod, Adarsh Nagar, M/W Ward, Zone 5, Mumbai, Mumbai Suburban, Maharashtra, 400089, India"
+        "address": "Not Mentioned janta raod, Adarsh Nagar, M/W Ward, Zone 5, Mumbai, Mumbai Suburban, Maharashtra, 400089, India"
     },
     {
         "location": [19.04678400000006,72.89541220000007],
-        "address": " Collector Colony, M/W Ward, Zone 5, Mumbai, Mumbai Suburban, Maharashtra, 400071, India"
+        "address": "Not Mentioned Collector Colony, M/W Ward, Zone 5, Mumbai, Mumbai Suburban, Maharashtra, 400071, India"
     },
     {
         "location": [19.033516000000077,72.89617030000005],
-        "address": " M/W Ward, Zone 5, Mumbai, Mumbai Suburban, Maharashtra, 400074, India"
+        "address": "Not Mentioned M/W Ward, Zone 5, Mumbai, Mumbai Suburban, Maharashtra, 400074, India"
     },
     {
         "location": [19.031168765000075,72.89623193800003],
-        "address": " Ramakrishna Chemburkar Marg [Ghatkopar Mahul Road], Collector Colony, M/W Ward, Zone 5, Mumbai, Mumbai Suburban, Maharashtra, 400074, India"
+        "address": "Not Mentioned Ramakrishna Chemburkar Marg (Ghatkopar Mahul Road), Collector Colony, M/W Ward, Zone 5, Mumbai, Mumbai Suburban, Maharashtra, 400074, India"
     },
     {
         "location": [19.044386648000057,72.88954491700008],
-        "address": " Collector Colony, M/W Ward, Zone 5, Mumbai, Mumbai Suburban, Maharashtra, 400074, India"
+        "address": "Not Mentioned Collector Colony, M/W Ward, Zone 5, Mumbai, Mumbai Suburban, Maharashtra, 400074, India"
     },
     {
         "location": [19.060336850000056,72.88454790000003],
-        "address": " S G Barve Marg [C S T Road], Sindhi Society, M/W Ward, Zone 5, Mumbai, Mumbai Suburban, Maharashtra, 400024, India"
+        "address": "Not Mentioned S G Barve Marg (C S T Road), Sindhi Society, M/W Ward, Zone 5, Mumbai, Mumbai Suburban, Maharashtra, 400024, India"
     },
     {
         "location": [19.061279200000058,72.90818430000007],
-        "address": " P.L. Lokhande Marg, Adarsh Nagar, M/W Ward, Zone 5, Mumbai, Mumbai Suburban, Maharashtra, 400044, India"
+        "address": "Not Mentioned P.L. Lokhande Marg, Adarsh Nagar, M/W Ward, Zone 5, Mumbai, Mumbai Suburban, Maharashtra, 400044, India"
     },
     {
         "location": [19.095527121000032,72.90004929700007],
-        "address": " R B Kadam Road, Azad Nagar, N Ward, Zone 6, Mumbai, Mumbai Suburban, Maharashtra, 400086, India"
+        "address": "Not Mentioned R B Kadam Road, Azad Nagar, N Ward, Zone 6, Mumbai, Mumbai Suburban, Maharashtra, 400086, India"
     },
     {
         "location": [19.099685300000033,72.90289370000005],
-        "address": " Azad Nagar, N Ward, Zone 6, Mumbai, Mumbai Suburban, Maharashtra, 400086, India"
+        "address": "Not Mentioned Azad Nagar, N Ward, Zone 6, Mumbai, Mumbai Suburban, Maharashtra, 400086, India"
     },
     {
         "location": [18.99669166666667,72.84927777777777],
-        "address": " Dosti Flamingos, F/S Ward, Zone 2, Mumbai, Mumbai City, Maharashtra, 400015, India"
+        "address": "Add- A Wing Dosti Flamingos, F/S Ward, Zone 2, Mumbai, Mumbai City, Maharashtra, 400015, India"
     },
     {
         "location": [19.00576666666667,72.84571944444444],
-        "address": " 19/1390, Mamta Bldg Parel Institute Of Orthopaedic Specialities, Jerbai Wadia Marg, Bhoiwada, F/S Ward, Zone 2, Mumbai, Mumbai City, Maharashtra, 400012, India"
+        "address": "Add- 19/1390, Mamta Bldg Parel Institute Of Orthopaedic Specialities, Jerbai Wadia Marg, Bhoiwada, F/S Ward, Zone 2, Mumbai, Mumbai City, Maharashtra, 400012, India"
     },
     {
         "location": [18.99362222222223,72.83183333333334],
-        "address": " BDD 12, Panchaganga Apartments, N M Joshi Marg [Delisle Road], BDD Chawl, E Ward, Zone 2, Mumbai, Kulāba, Mumbai City, Maharashtra, 400027, India"
+        "address": "Add- BDD 12, Panchaganga Apartments, N M Joshi Marg (Delisle Road), BDD Chawl, E Ward, Zone 2, Mumbai, Kulāba, Mumbai City, Maharashtra, 400027, India"
     },
     {
         "location": [18.98544444444445,72.82926388888889],
-        "address": " D committee Arthur Road Jail, Sane Guruji Marg [Arthur Road], E Ward, Zone 1, Mumbai, Mumbai City, Maharashtra, 400027, India"
+        "address": "Add- D committee Arthur Road Jail, Sane Guruji Marg (Arthur Road), E Ward, Zone 1, Mumbai, Mumbai City, Maharashtra, 400027, India"
     },
     {
         "location": [19.06078611111111,72.84973333333333],
-        "address": " Room No 302 Hazarimal Chetnas College, Ambedkar chowk, Gandhi Nagar, H/E Ward, Zone 3, Mumbai, Mumbai Suburban, Maharashtra, India"
+        "address": "Add- Room No 302 Hazarimal Chetnas College, Ambedkar chowk, Gandhi Nagar, H/E Ward, Zone 3, Mumbai, Mumbai Suburban, Maharashtra, India"
     },
     {
         "location": [19.09516388888889,72.88785833333334],
-        "address": " A/102, Dosti Enclave, KPM High School, 90 Feet Road, Sunder Baug, L Ward, Zone 5, Mumbai, Mumbai Suburban, Maharashtra, 400 072, India"
+        "address": "Add- A/102, Dosti Enclave, KPM High School, 90 Feet Road, Sunder Baug, L Ward, Zone 5, Mumbai, Mumbai Suburban, Maharashtra, 400 072, India"
     },
     {
         "location": [19.09374722222222,72.90226944444446],
-        "address": " Sai Ganesh Bldg Azad Nagar, N Ward, Zone 6, Mumbai, Mumbai Suburban, Maharashtra, 400086, India"
+        "address": "Add- Sai Ganesh Bldg Azad Nagar, N Ward, Zone 6, Mumbai, Mumbai Suburban, Maharashtra, 400086, India"
     },
     {
         "location": [19.07239722222222,72.90846111111112],
-        "address": " R,510 , Bldg 21, Vallabh Baug lane, Ramabai Sahakar Nagar, N Ward, Zone 6, Mumbai, Mumbai Suburban, Maharashtra, 400077, India"
+        "address": "Add- R,510 , Bldg 21, Vallabh Baug lane, Ramabai Sahakar Nagar, N Ward, Zone 6, Mumbai, Mumbai Suburban, Maharashtra, 400077, India"
     },
     {
         "location": [19.08457222222222,72.91007777777779],
-        "address": " Room No.603 B Wing Babli Mahadev Kanekar Marg, Saibaba Nagar, N Ward, Zone 6, Mumbai, Mumbai Suburban, Maharashtra, 400077, India"
+        "address": "Add- Room No.603 B Wing Babli Mahadev Kanekar Marg, Saibaba Nagar, N Ward, Zone 6, Mumbai, Mumbai Suburban, Maharashtra, 400077, India"
     },
     {
         "location": [19.178875,72.86304444444444],
-        "address": " Room No 107 Pathanwadi Road, P/N Ward, Zone 4, Mumbai, Mumbai Suburban, Maharashtra, 400097, India"
+        "address": "Add- Room No 107 Pathanwadi Road, P/N Ward, Zone 4, Mumbai, Mumbai Suburban, Maharashtra, 400097, India"
     },
     {
         "location": [19.22093333333333,72.86094166666666],
-        "address": " 1 Dattapada Road, R/C Ward, Zone 4, Mumbai, Mumbai Suburban, Maharashtra, 400066, India"
+        "address": "Add- 1 Dattapada Road, R/C Ward, Zone 4, Mumbai, Mumbai Suburban, Maharashtra, 400066, India"
     },
     {
         "location": [19.11861944444445,72.93453055555555],
-        "address": " 9/295 S Ward, Zone 6, Mumbai, Mumbai Suburban, Maharashtra, 400083, India"
+        "address": "Add- 9/295 S Ward, Zone 6, Mumbai, Mumbai Suburban, Maharashtra, 400083, India"
     },
     {
         "location": [19.09933250000006,72.90286780000008],
-        "address": " Jagdusha Nagar, N Ward, Zone 6, Mumbai, Mumbai Suburban, Maharashtra, 400086, India"
+        "address": "Not Mentioned Jagdusha Nagar, N Ward, Zone 6, Mumbai, Mumbai Suburban, Maharashtra, 400086, India"
     },
     {
         "location": [19.099273699000037,72.91670991800004],
-        "address": " R City Phase One, Road Number 6, Amrut Nagar, N Ward, Zone 6, Mumbai, Mumbai Suburban, Maharashtra, 400075, India"
+        "address": "Not Mentioned R City Phase One, Road Number 6, Amrut Nagar, N Ward, Zone 6, Mumbai, Mumbai Suburban, Maharashtra, 400075, India"
     },
     {
         "location": [19.17825285500004,72.86223807000005],
-        "address": " P/N Ward, Zone 4, Mumbai, Mumbai Suburban, Maharashtra, 400097, India"
+        "address": "Not Mentioned P/N Ward, Zone 4, Mumbai, Mumbai Suburban, Maharashtra, 400097, India"
     },
     {
         "location": [19.189522453000052,72.86554153700007],
-        "address": " P/N Ward, Zone 4, Mumbai, Mumbai Suburban, Maharashtra, 400097, India"
+        "address": "Not Mentioned P/N Ward, Zone 4, Mumbai, Mumbai Suburban, Maharashtra, 400097, India"
     },
     {
         "location": [19.170750359000067,72.87787931800005],
-        "address": " Nagari Niwara Colony, P/N Ward, Zone 4, Mumbai, Mumbai Suburban, Maharashtra, 400063, India"
+        "address": "Not Mentioned Nagari Niwara Colony, P/N Ward, Zone 4, Mumbai, Mumbai Suburban, Maharashtra, 400063, India"
     },
     {
         "location": [19.180259400000068,72.86128000000008],
-        "address": " P/N Ward, Zone 4, Mumbai, Mumbai Suburban, Maharashtra, 400097, India"
+        "address": "Not Mentioned P/N Ward, Zone 4, Mumbai, Mumbai Suburban, Maharashtra, 400097, India"
     },
     {
         "location": [19.138673022000035,72.85367576000004],
-        "address": " Gufa Tekdi, K/E Ward, Zone 3, Mumbai, Mumbai Suburban, Maharashtra, 400060, India"
+        "address": "Not Mentioned Gufa Tekdi, K/E Ward, Zone 3, Mumbai, Mumbai Suburban, Maharashtra, 400060, India"
     },
     {
         "location": [19.255298550000077,72.87584095000005],
-        "address": " Vaishali Nagar, R/N Ward, Zone 4, Mumbai, Mumbai Suburban, Maharashtra, 401202, India"
+        "address": "Not Mentioned Vaishali Nagar, R/N Ward, Zone 4, Mumbai, Mumbai Suburban, Maharashtra, 401202, India"
     },
     {
         "location": [19.198057222000045,72.85995734100004],
-        "address": " R/S Ward, Zone 4, Mumbai, Mumbai Suburban, Maharashtra, 400101, India"
+        "address": "Not Mentioned R/S Ward, Zone 4, Mumbai, Mumbai Suburban, Maharashtra, 400101, India"
     },
     {
         "location": [19.203754296000056,72.83185210800008],
-        "address": " Charkop Village, R/S Ward, Zone 4, Mumbai, Mumbai Suburban, Maharashtra, 400067, India"
+        "address": "Not Mentioned Charkop Village, R/S Ward, Zone 4, Mumbai, Mumbai Suburban, Maharashtra, 400067, India"
     },
     {
         "location": [19.124386924000078,72.91879652000006],
-        "address": " Ramabai Ambedkar Nagar, S Ward, Zone 6, Mumbai, Mumbai Suburban, Maharashtra, 40076, India"
+        "address": "Not Mentioned Ramabai Ambedkar Nagar, S Ward, Zone 6, Mumbai, Mumbai Suburban, Maharashtra, 40076, India"
     },
     {
         "location": [19.135759767000025,72.93830499300003],
-        "address": " auto parking road, Kanjur Village, S Ward, Zone 6, Mumbai, Mumbai Suburban, Maharashtra, 400042, India"
+        "address": "Not Mentioned auto parking road, Kanjur Village, S Ward, Zone 6, Mumbai, Mumbai Suburban, Maharashtra, 400042, India"
     },
     {
         "location": [19.166543250000075,72.95051435000005],
-        "address": " Suyog Hospital and Iccu, Pandit Jawaharlal Nehru Road, Vaithara Nagar, T Ward, Zone 6, Mumbai, Mumbai Suburban, Maharashtra, 400080, India"
+        "address": "Not Mentioned Suyog Hospital and Iccu, Pandit Jawaharlal Nehru Road, Vaithara Nagar, T Ward, Zone 6, Mumbai, Mumbai Suburban, Maharashtra, 400080, India"
     },
     {
         "location": [19.056780556000035,72.84175000000005],
@@ -3576,63 +3577,239 @@ function updateMap() {
     },
     {
         "location": [18.96689444444444,72.84080555555555],
-        "address": " Belvedere hill St Peters School, Belvedere Road, E Ward, Zone 1, Mumbai, Mumbai City, Maharashtra, 400009, India"
+        "address": "Add- Belvedere hill St Peters School, Belvedere Road, E Ward, Zone 1, Mumbai, Mumbai City, Maharashtra, 400009, India"
     },
     {
         "location": [19.01413055555556,72.8620111111111],
-        "address": " 9/179 BPT Hospital, LM Nadkarni Road, F/S Ward, Zone 2, Mumbai, Mumbai City, Maharashtra, 400011, India"
+        "address": "Add- 9/179 BPT Hospital, LM Nadkarni Road, F/S Ward, Zone 2, Mumbai, Mumbai City, Maharashtra, 400011, India"
     },
     {
         "location": [18.96306666666667,72.81490277777777],
-        "address": " 1803, 18th floor Shankar Seth Lane, Chikalwadi, D Ward, Zone 1, Mumbai, Mumbai City, Maharashtra, 400007, India"
+        "address": "Add- 1803, 18th floor Shankar Seth Lane, Chikalwadi, D Ward, Zone 1, Mumbai, Mumbai City, Maharashtra, 400007, India"
     },
     {
         "location": [18.96426388888889,72.82742777777777],
-        "address": " Room No- 9, 23/16 Shankarrao Pupala Marg, E Ward, Zone 1, Mumbai, Mumbai City, Maharashtra, 400004, India"
+        "address": "Add- Room No- 9, 23/16 Shankarrao Pupala Marg, E Ward, Zone 1, Mumbai, Mumbai City, Maharashtra, 400004, India"
     },
     {
         "location": [18.96694444444444,72.80754722222223],
-        "address": " Room No-31, B Wing Kenilworth, Pedder Road [Gopalrao Deshmukh Marg], Haji Ali, D Ward, Zone 1, Mumbai, Mumbai City, Maharashtra, 400026, India"
+        "address": "Add- Room No-31, B Wing Kenilworth, Pedder Road (Gopalrao Deshmukh Marg), Haji Ali, D Ward, Zone 1, Mumbai, Mumbai City, Maharashtra, 400026, India"
     },
     {
         "location": [18.98755555555556,72.8336861111111],
-        "address": " Arham tower Building E Ward, Zone 2, Mumbai, Mumbai City, Maharashtra, 400027, India"
+        "address": "Add- Arham tower Building E Ward, Zone 2, Mumbai, Mumbai City, Maharashtra, 400027, India"
     },
     {
         "location": [18.98360833333333,72.83419166666665],
-        "address": " E wing room no. 20 10th floor Dr Babasaheb Ambedkar Marg, E Ward, Zone 2, Mumbai, Mumbai City, Maharashtra, 400027, India"
+        "address": "Add- E wing room no. 20 10th floor Dr Babasaheb Ambedkar Marg, E Ward, Zone 2, Mumbai, Mumbai City, Maharashtra, 400027, India"
     },
     {
         "location": [19.02626111111111,72.8721611111111],
-        "address": " Rm no. 501, Bharatiya Kamala Nagar, F/N Ward, Zone 2, Bharathiya Kamala Nagar, Mumbai City, Maharashtra, 400037, India"
+        "address": "Add- Rm no. 501, Bharatiya Kamala Nagar, F/N Ward, Zone 2, Bharathiya Kamala Nagar, Mumbai City, Maharashtra, 400037, India"
     },
     {
         "location": [19.00627222222222,72.84681944444444],
-        "address": " Flat No 205 G.D. Ambedkar Marg, Bhoiwada, F/S Ward, Zone 2, Mumbai, Mumbai City, Maharashtra, 400031, India"
+        "address": "Add- Flat No 205 G.D. Ambedkar Marg, Bhoiwada, F/S Ward, Zone 2, Mumbai, Mumbai City, Maharashtra, 400031, India"
     },
     {
         "location": [19.00147222222222,72.85279999999999],
-        "address": " 901 Ashwamedh CHS Sadbhavana Nagar, F/S Ward, Zone 2, Mumbai, Mumbai City, Maharashtra, 400033, India"
+        "address": "Add- 901 Ashwamedh CHS Sadbhavana Nagar, F/S Ward, Zone 2, Mumbai, Mumbai City, Maharashtra, 400033, India"
     },
     {
         "location": [18.99535,72.82621666666667],
-        "address": " 3/52 Khimji Nagji Firki, 1, Janta Industrial Estate, Senapati Bapat Marg, BDD Chawl, G/S Ward, Zone 2, Mumbai, Mumbai City, Maharashtra, 400013, India"
+        "address": "Add- 3/52 Khimji Nagji Firki, 1, Janta Industrial Estate, Senapati Bapat Marg, BDD Chawl, G/S Ward, Zone 2, Mumbai, Mumbai City, Maharashtra, 400013, India"
     },
     {
         "location": [19.10005555555556,72.86794722222221],
-        "address": " Room No. 2 Sahar Gaon, CPWD Colony, Zone 3, Mumbai, Mumbai Suburban, Maharashtra, 400099, India"
+        "address": "Add- Room No. 2 Sahar Gaon, CPWD Colony, Zone 3, Mumbai, Mumbai Suburban, Maharashtra, 400099, India"
     },
     {
         "location": [19.06534166666667,72.90718333333334],
-        "address": " Topaz Building Rahul Nagar, M/W Ward, Zone 5, Mumbai, Mumbai Suburban, Maharashtra, 400044, India"
+        "address": "Add- Topaz Building Rahul Nagar, M/W Ward, Zone 5, Mumbai, Mumbai Suburban, Maharashtra, 400044, India"
     },
     {
         "location": [19.08761388888889,72.90238055555557],
-        "address": " Sindhi Chawl LBS Marg, Sunder Baug, L Ward, Zone 5, Mumbai, Mumbai Suburban, Maharashtra, 400086, India"
+        "address": "Add- Sindhi Chawl LBS Marg, Sunder Baug, L Ward, Zone 5, Mumbai, Mumbai Suburban, Maharashtra, 400086, India"
     },
     {
         "location": [19.17595,72.87313611111111],
-        "address": " B 203 Tree House Play School, General A K Vaidya Marg,Yashodham, P/S Ward, Zone 4, Mumbai, Mumbai Suburban, Maharashtra, 400063, India"
+        "address": "Add- B 203 Tree House Play School, General A K Vaidya Marg, Yashodham, P/S Ward, Zone 4, Mumbai, Mumbai Suburban, Maharashtra, 400063, India"
+    },
+    {
+        "location": [18.96306666666667,72.81490277777777],
+        "address": "Add- 1803, 18th floor, Amorina Heigts CHS  ,  Bhaji galli ,Grant road (W) 400007"
+    },
+    {
+        "location": [18.94767500000006,72.82577222200007],
+        "address": "Keshav Narsi bldg Mahadev shankar seth lane Chira Bazar 400003"
+    },
+    {
+        "location": [18.95852968500003,72.82439547900003],
+        "address": "38H BoriChawl Fanaswadi Kalbadevi 400003"
+    },
+    {
+        "location": [19.198150000000055,72.82790277800007],
+        "address": "Ekta Nagar, Galli No. 07, Old Link Road, Opp. Petrol Pump, Near Ashish Hotel Kandivali west 400067"
+    },
+    {
+        "location": [19.210225000000037,72.82191111100008],
+        "address": "SagarCHS Charkop Sec 2 RSC 7,Kandivali west 400067"
+    },
+    {
+        "location": [19.156961111000044,72.92876111100003],
+        "address": "Gurav Chawl, Tembhipada, Vaghobawadi, Bhandup West-400078"
+    },
+    {
+        "location": [19.091742664000037,72.88225257400006],
+        "address": "Behind Jarimari Temple Kurla Andheri Road Sakinaka 400072"
+    },
+    {
+        "location": [19.097379423000064,72.89193116700005],
+        "address": "Jaibunnisa chawl. Rajiv Nagar, Kurla Andheri Road, Near shivprabha building, Sakinaka, Mumbai-400072"
+    },
+    {
+        "location": [19.089655556000025,72.88833888900007],
+        "address": "Sunder Baug Navjivan Mandal LBS marg Navjivan Mandal Kurla W Kamani 400070"
+    },
+    {
+        "location": [19.083857849000026,72.88869310900003],
+        "address": "Juri Pathak Chawl, Vijay Nagar, Kurla Andheri Road, Opp Naaz hotel, Kurla West, Mumbai- 400072"
+    },
+    {
+        "location": [19.063748780000026,72.85659800100007],
+        "address": "Plot No.8 Bharat Nagar Bandra East 400055"
+    },
+    {
+        "location": [18.97225833300007,72.81301111100004],
+        "address": "Janta Nagar Building J D Marg Tardeo 400034"
+    },
+    {
+        "location": [19.170763889000057,72.87108888900008],
+        "address": "Panchsheel Chawl Near Kailas Mandir SuryanagarVikhroli (W) 400083"
+    },
+    {
+        "location": [19.13983055600005,72.92569722200005],
+        "address": "Kamble Compound, Near Panchsheel Buddhvihar, Pratap Nagar Road, Bhandup (W)-400078"
+    },
+    {
+        "location": [19.202794444000062,72.82734722200007],
+        "address": "Deep Ganga CHSL, Neelkanth Nagar Mhada Colony Ganesh Nagar Kandivali west 400067"
+    },
+    {
+        "location": [19.11710555600007,72.94157222200005],
+        "address": "Indira Vikas Seva Sangh chawl no.1 Kannamwar Nagar-II Opp.Bldg. no. 178, Vikhroli (E) 400083"
+    },
+    {
+        "location": [19.074198856000066,72.84366331800004],
+        "address": "Madina Masjid Golibar Santacruz East 400055"
+    },
+    {
+        "location": [19.05524444444444,72.83092222222221],
+        "address": "Flat no. 9,Sankalp Siddhi ,Kher Nagar ,Bandra East - 400055"
+    },
+    {
+        "location": [19.0647,72.85949722222222],
+        "address": "Chawl No.60/926, Bharat Nagar, Bandra East - 400055"
+    },
+    {
+        "location": [19.06745,72.84631944444443],
+        "address": "Room no.3 ,Dayaram Chawl ,New Deepakwadi ,Nirmal Nagar ,Khar East - 400055"
+    },
+    {
+        "location": [19.05641111111111,72.84412499999999],
+        "address": "Opp. Nav Nirman Chawl, Ahmed Zakeria, Bandra East-400055"
+    },
+    {
+        "location": [19.13468055555556,72.85989166666666],
+        "address": "C-13/183  , PREM NAGAR  , MASJID THAKUR MAIDAN, COMMUNIST PARTY GALLI, Jogeshwari East - 400060"
+    },
+    {
+        "location": [19.09795833333333,72.85079444444443],
+        "address": "Room no 60 , Shastri nagar, Aliyavar Jung marg , Vile parle East - 400050"
+    },
+    {
+        "location": [19.10656388888889,72.86858888888888],
+        "address": "Kadamwadi, Marol Pipeline , Andheri Kurla - 400059"
+    },
+    {
+        "location": [19.11530833333334,72.85383611111111],
+        "address": "Govind Wadi, Behind Darpan Talkies, Chakala , Andheri East - 400093"
+    },
+    {
+        "location": [19.11156111111111,72.84957777777777],
+        "address": "6/609, Building no. 3 , Tirupati Balaj, Sahar Rd, Saiwad, Andheri East - 400069"
+    },
+    {
+        "location": [19.12399183997624,72.85027037811345],
+        "address": "Room 3 , Sitaram Mithai Wala Chawl, Mogra Pada Andheri East - 400069"
+    },
+    {
+        "location": [19.10033611111111,72.84599166666666],
+        "address": "16 A, Fernandes Street , Tejpal Road, Vile Parle East - 400057"
+    },
+    {
+        "location": [19.14522777777778,72.84733888888888],
+        "address": "405- B, AQUA Cooperative Society,  BUILDING NO.18 , AMRUT NAGAR, JOGESHWARI WEST - 400102"
+    },
+    {
+        "location": [19.07038888888889,72.87995555555555],
+        "address": "R NO 72 , REGAL HOUSE BLDG , PIPE LINE, MARKAZ MASJID, BUDDHA COLONY - 400070"
+    },
+    {
+        "location": [19.07611944444444,72.8788861111111],
+        "address": "R NO 3 ,PRANAM HOUSING SOCEITY BLDG ,ANNASAGAR MARG,192 KURLA CST ROAD ,BEHIND NOOR HOSPITAL ,MATCH FACTORY-400070"
+    },
+    {
+        "location": [19.07444722222222,72.88048055555555],
+        "address": "35 IMTIAZ BUILDING, SHAMI COMPOUND , BRAHMANWADI KALLU MUTTON SHOP , KURLA WEST - 400070"
+    },
+    {
+        "location": [19.18583055555556,72.84183888888889],
+        "address": "402, Dhavalgiri Building, Near Sonali Plaza, Liberty Garden , Malad west  - 400095"
+    },
+    {
+        "location": [19.18166944444445,72.84060833333334],
+        "address": "A/601, SOLITAIRE STAR , NEAR DATTA MANDIR , SOMWARI BAZAR, MALAD WEST  -400064"
+    },
+    {
+        "location": [19.18349722222222,72.860225],
+        "address": "OMKAR SRA BUILDING , SANTOSH NAGAR  , DINDOSHI, MALAD EAST- 400097"
+    },
+    {
+        "location": [19.16321944444444,72.83446944444444],
+        "address": "Room no 615 R8, Millat society, Ram Mandir, Goregaon west - 400104"
+    },
+    {
+        "location": [19.15335,72.88556944444446],
+        "address": "19, Royal Palm, Goregaon east - 400065"
+    },
+    {
+        "location": [19.20050555555556,72.84860277777777],
+        "address": "1 , Shubhashish Building nearby 2 buildings , Parekh lane, Near badshah Residency, s.v road, kandivali west - 400067"
+    },
+    {
+        "location": [19.20198333333333,72.82565555555556],
+        "address": "Room No 104, Bldg 31 Ekta nagar, MHADA Kandivali West - 400067"
+    },
+    {
+        "location": [19.16726666666667,72.95730555555556],
+        "address": "AMBEY ASHIRWAD BLG 1 ,CHAFEKAR BANDHU ROAD ,MULUND EAST - 400081"
+    },
+    {
+        "location": [18.97201944444444,72.81515277777777],
+        "address": "Add- Room No- 26, 3rd Floor, Firoza Mansion , Lamington Road Shapur Baug , Grant Road  - 400007"
+    },
+    {
+        "location": [18.9883763,72.8310735],
+        "address": "SHRAMIK NIWAS SANE GURUJI MARG CHINCHPOKALI 400012"
+    },
+    {
+        "location": [18.9892397,72.8333359],
+        "address": "AADHAR BLDG SANE GURUJI MARG NEAR VIKRANT SADAN BUILDING,CHINCHPOKALI 400012"
+    },
+    {
+        "location": [19.145471,72.928365],
+        "address": "Criticare Hopsital Sahjivan Heights Pratap Nagar Road Kokan Nagar Bhandup (W) 400078"
     }
 ];
   
@@ -3669,7 +3846,8 @@ function updateMap() {
       }
     });
   });
-
+  console.log(hotspots["length"]);
+  document.getElementById("hotspotnumber").innerHTML=hotspots["length"];
   // code from the next step will go here!
   var geojson = {
     type: 'FeatureCollection',
@@ -3686,12 +3864,14 @@ function updateMap() {
         .setHTML('<p>' + marker.properties.description + '</p>'))
       .addTo(map);
   });
+    // Remove the show class from DIV
+  x.className = x.className.replace("show", ""); 
+  console.log("loading stop");
 }
 
 
 
 function alrtfisrtime(){
-
 var visited = localStorage.getItem('visited');
 if (!visited) {
   alert( '👉 Click on Gps button 🛰️ to see Infected area near your location');
