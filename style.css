@@ -25,18 +25,6 @@ text-align: center;
 font-family: 'Open Sans', sans-serif;
 }
 /* Message */
-.float{
-	position:absolute;
-  bottom:10px;
-  padding:10px;
-  z-index: 4;
-	background-color:#3498DB;
-	color:#FFF;
-	border-radius:10px;
-	text-align:center;
-  box-shadow: 2px 2px 3px #999;
-  margin: 2px;
-}
 
 
 /* Message */
@@ -88,3 +76,52 @@ However, delay the fade out process for 2.5 seconds */
   to {bottom: 0; opacity: 0;}
 }
 /* loder */
+* {
+  box-sizing: border-box;
+}
+
+/* Style the list (remove margins and bullets, etc) */
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  position:absolute;
+  bottom:5px;
+}
+
+/* Style the list items */
+ul li {
+  border-radius:10px;
+  border: 1px solid #ddd;
+  margin-top: -1px; /* Prevent double borders */
+  z-index: 4;
+	background-color:#3498DB;
+  padding: 10px;
+  text-decoration: none;
+  color:#FFF;
+  font-family:'Times New Roman', Times,Georgia, serif;
+  display: block;
+  position: relative;
+  text-align:center;
+  font-size: small;
+  
+}
+
+
+
+/* Style the close button (span) */
+.close {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  right: 0%;
+  padding: 5px 8px;
+  transform: translate(0%, -50%);
+  color: red;
+  
+}
+.closep{
+  margin-right: 16px;
+}
+
+.close:hover {background: rgb(175, 104, 216);}
