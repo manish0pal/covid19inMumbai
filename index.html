@@ -42,10 +42,10 @@
 
   <div id="snackbar">Loding....</div>
   <ul>
-    <li><p class="closep">The map is updated at 19-April-2020 </p><span class="close">x</span></li>
+    <li><p class="closep">The map is updated at <strong id=updatedate></strong>  </p><span class="close">x</span></li>
   
     <li><p class="closep">Total hotspot in mumbai  <strong id=hotspotnumber></strong> 
-      and Confirmed case in mumbai is 2,257</p><span class="close">x</span></li>
+      and Confirmed case in mumbai is <strong id=confirmcase></strong></p><span class="close">x</span></li>
     </ul>
 </div>
 
@@ -61,15 +61,21 @@ console.log("loading start");
  <script src="https://unpkg.com/@mapbox/mapbox-sdk/umd/mapbox-sdk.min.js"></script>
 <script src="https://api.mapbox.com/mapbox-gl-js/v1.9.1/mapbox-gl.js"></script>
 <script src="index.js"></script>
+<script src="mumbailivecount.js"></script>
+
 <script>
   
     mapboxgl.accessToken = 'pk.eyJ1IjoibWFuaXNocGFsIiwiYSI6ImNrOG45MDVkcTA2cmczZmx2b3NuanE5a3AifQ.0UMfWYIJU1dIToDsbVWYgw';
-
+    var bounds = [
+[ 72.717788,18.821444], // Southwest coordinates
+[ 73.012335,19.337541] // Northeast coordinates
+];
 var map = new mapboxgl.Map({
   container: 'map',
   style: 'mapbox://styles/mapbox/streets-v11',
-      zoom:'12',
-      center: [72.89,19.09]
+      zoom:'10.5',
+      center: [72.85,19.05],
+      maxBounds: bounds // Sets bounds as max
 });
 updateMap()
 
