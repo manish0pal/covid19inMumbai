@@ -9,7 +9,10 @@ request.onload = function() {
     cnfinmum =  data.Maharashtra.districtData.Mumbai.confirmed
     //add to map
     document.getElementById("confirmcase").innerHTML =cnfinmum
-    
+    var x = document.getElementById("snackbar")
+        // Remove the show class from DIV
+        x.className = x.className.replace("show", "");
+        console.log("loading stop");
   } else {
 
     // refresh
@@ -24,8 +27,4 @@ var day = dateObj.getUTCDate();
 var year = dateObj.getUTCFullYear();
 
 date = year + "/" + month + "/" + day;
-document.getElementById("updatedate").innerHTML =date
-var x = document.getElementById("snackbar")
-        // Remove the show class from DIV
-        x.className = x.className.replace("show", "");
-        console.log("loading stop");
+//document.getElementById("updatedate").innerHTML =date

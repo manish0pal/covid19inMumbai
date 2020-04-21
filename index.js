@@ -483,6 +483,13 @@ function updateMap() {
         },
         {
             "location": [
+                "19.192134",
+                "72.796853"
+            ],
+            "address": "INS Hamla Madh Marve road"
+        },
+        {
+            "location": [
                 "19.060979",
                 "72.925627"
             ],
